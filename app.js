@@ -27,9 +27,11 @@ function processoLista(opcaoEscolhida) {
         console.log("Tarefa removida.");
       }
     }
-  } else {
+  } else if (opcaoEscolhida == "quit") {
     continuarRodando = false;
     console.log("Programa encerrado.");
+  } else {
+    console.log("Informação irreconhecida, tente novamente.");
   }
 }
 
