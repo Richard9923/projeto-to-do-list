@@ -6,7 +6,7 @@ function oqueFazer() {
   );
   return passo;
 }
-/* criar uma funcao para adicionar um item na lista de tarefas */
+/* criar uma funcao para realizar o processo de acoprdo com o input */
 function processoLista(opcaoEscolhida) {
   if (opcaoEscolhida == "new") {
     const todo = prompt("Qual tarefa você quer adicionar? ");
