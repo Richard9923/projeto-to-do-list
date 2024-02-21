@@ -11,7 +11,9 @@ function processoLista(opcaoEscolhida) {
   if (opcaoEscolhida == "new") {
     const todo = prompt("Qual tarefa você quer adicionar? ");
     todoList.push(todo);
+    console.log("Tarefa adicionada.");
   } else if (opcaoEscolhida == "list") {
+    console.log("Lista de tarefas atualizada: ");
     for (item of todoList) {
       console.log(`${todoList.indexOf(item)}: ${item}.`);
     }
@@ -22,10 +24,12 @@ function processoLista(opcaoEscolhida) {
     for (item of todoList) {
       if (escolherItem == todoList.indexOf(item)) {
         todoList.splice(todoList.indexOf(item), 1);
+        console.log("Tarefa removida.");
       }
     }
   } else {
     continuarRodando = false;
+    console.log("Programa encerrado.");
   }
 }
 
